@@ -1,0 +1,11 @@
+import java.util.Arrays;
+class StringInArray 
+{
+	public static void main(String[] args) 
+	{
+		String s="HOW ARE YOU";
+		String [] a=s.split(" ");
+
+		System.out.println(Arrays.toString(a));
+	}
+}

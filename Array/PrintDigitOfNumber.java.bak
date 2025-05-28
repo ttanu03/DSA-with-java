@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class PrintDigitOfNumber
+{
+
+	public static int countNumber(int ld)
+	{
+		int count=0;
+		for(int i=1;i<=ld;i++)
+		{
+			if(ld%i==0)
+			{
+				count++;
+			}
+		}
+		return count;
+		}
+	
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		while(num>0)
+		{
+			int ld=num%10;
+			int count=countNumber(ld);
+			if(count==2)
+			{
+				System.out.println(ld);
+			}
+			num=num/10;
+		}
+	}
+
+}

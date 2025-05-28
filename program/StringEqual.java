@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class StringsEqual 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner (System.in);
+		boolean isEqual=true;
+		System.out.println("Give the first string");
+		String s1= sc.next();
+		System.out.println("Give the first string");
+		String s2= sc.next();
+
+		for(int i=0;i<=s1.length()-1;i++)
+		{
+			char ch1=s1.charAt(i);
+		{for(int j=0;j<=s2.length()-1;j++)
+			{
+			char ch2=s2.charAt(j);
+			if(ch1!=ch2)
+				{
+				isEqual=false;
+				break;
+				}
+			}
+		}
+		if(isEqual==true)
+		{
+			System.out.println("String is equal");
+		}
+		else{
+			System.out.println("String is not equal");
+		}
+
+
+
+
+		}
+		
+	}
+}

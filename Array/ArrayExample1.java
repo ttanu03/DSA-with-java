@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class  ArrayExample1
+{
+	public static void main(String[] args) 
+	{   
+		Scanner sc=new Scanner (System.in); 
+		System.out.println("Enter the size of the array");
+		int size=sc.nextInt();
+		int [] a= new  int [size];
+        System.out.println("Enter the element of the array");
+		for(int i=0;i<=a.length-1;i++)
+		{
+			a[i]=sc.nextInt();
+			}
+			for(int i=0;i<=a.length-1;i++)
+				{
+	            System.out.println(" The "+ i +"th number of Array  :" +  a[i]);
+				}
+	}
+	   
+		
+		
+}
