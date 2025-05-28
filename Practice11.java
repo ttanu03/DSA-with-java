@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Practice11 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner (System.in);
+		int num= scan.nextInt();
+		int count=0;
+		while(count<=num){
+			for(int i=2;i<=num;i++)
+				  for (int j=1;j<=i;j++){
+				   if(i%j==0){
+
+					count++;}
+					if (count==2)
+					{
+						System.out.println(i);
+					}
+		}
+		}
+
+
+
+	}
+}
